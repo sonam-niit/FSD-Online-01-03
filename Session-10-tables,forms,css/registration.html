@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        Full Name: <input type="text" placeholder="Enter Full Name" required/>
+        <br /><br />
+        Gender: <input type="radio" name="gender"> Male
+        <input type="radio" name="gender" checked> Female
+        <input type="radio" name="gender"> Other
+        <br/><br/>
+        Date of Birth: <input type="date" required/> <br><br>
+        Profile Picture: <input type="file" required/> <br><br>
+        Languages known: 
+        <input type="checkbox"> Hindi
+        <input type="checkbox" checked> English
+        <input type="checkbox"> Marathi
+        <input type="checkbox"> tamil
+        <br><br>
+        Country:
+        <select required>
+            <option>--select--</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+            <option>Australia</option>
+        </select>
+        <br><br>
+        Enter Message:
+        <textarea rows="5" cols="40" placeholder="Enter your message" 
+        maxlength="100" required></textarea>
+
+        <br><br>
+        <input type="submit" value="Register" />
+
+    </form>
+</body>
+
+</html>
