@@ -1,0 +1,26 @@
+/* to make content responsive */
+@media (max-width:600px) {
+    .navbar{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+}
+.menu a{
+    color:white;
+    text-decoration: none;
+}
+.login{
+    padding: 5px 10px;
+}
