@@ -1,0 +1,39 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.container{
+    display: flex;
+    margin-top: 120px;
+}
+.sidebar{
+    position: sticky;
+    top: 120px;
+    height: 200px;
+    width: 30%;
+    background: lightgray;
+}
+.content{
+    position: relative;
+    margin-left: 20px;
+}
+.card{
+    position: relative;
+    padding: 20px;
+    background: lightblue;
+    width: 200px;
+}
+.badge{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
