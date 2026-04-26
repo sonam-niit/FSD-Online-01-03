@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box{
+            flex: 1 1 25%;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            color: white;
+            text-align: center;
+        }
+        .box:nth-child(1){background: red;}
+        .box:nth-child(2){background: green;}
+        .box:nth-child(3){background: blue;}
+        .box:nth-child(4){background: yellow;}
+        /* Tablet */
+        @media (max-width:820px){
+            .box{
+                flex: 1 1 50%
+            }
+        }
+        /* Mobile */
+        @media (max-width:480px){
+            .box{
+                flex: 1 1 100%
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAVSLo5cnTvrR9jtTL4-uuBtQf2hLFzcKgdg&s"/>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIh9EmyobhNhiJwG2qCxjhfrSz5TzjMYXQ8g&s"/>
+        </div>
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWuuUMUbDSGsRTx1QsJaBp4q-oej7V7NUTyA&s"/>
+        </div>
+        <div class="box">
+            <img src="https://rukminim2.flixcart.com/image/300/300/xif0q/shoe/b/i/u/7-0779-womn-7-shozie-white-grey-pink-original-imahgsyxvs8ummjt.jpeg"/>
+        </div>
+    </div>
+</body>
+</html>
