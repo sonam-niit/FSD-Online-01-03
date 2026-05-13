@@ -1,4 +1,4 @@
-# Software Industry Concepsts
+# Software Industry Concepts
 
 # What is Fullstack Development
 
