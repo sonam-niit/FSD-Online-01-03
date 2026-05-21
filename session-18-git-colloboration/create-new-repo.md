@@ -12,7 +12,7 @@
 - commit it (git commit -m "message")
 - push it (git push)
 
-## How to collab here
+## How to collaborate here
 
 - git switch -c login
 - create login.html (add some few lines of code)
