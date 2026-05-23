@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Switch Case Demo</h3>
+    <script>
+        let input1 = prompt("Enter any number");
+        let num1= Number(input1); //convert to number
+        let input2 = prompt("Enter any number");
+        let num2= Number(input2);
+        let op = prompt("Enter any symbol + - / *");
+
+        switch (op) {
+            case "+": document.write("<h1>" + num1 + " + " + num2 + " = " + (num1 + num2) + "</h1>");
+                      break;
+            case "-": document.write("<h1>" + num1 + " - " + num2 + " = " + (num1 - num2) + "</h1>");
+                      break;
+            case "*": document.write("<h1>" + num1 + " X " + num2 + " = " + (num1 * num2) + "</h1>");
+                      break;
+            case "/": document.write("<h1>" + num1 + " / " + num2 + " = " + (num1/num2) + "</h1>");
+                      break;
+
+            default: document.write("<h1>Enter Correct Operator</h1");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let amount = prompt("Enter your Bill Amount: ");
+        if (amount >= 5000) {
+            console.log("You got 20% discount");
+            console.log("paid Amount is ", (amount- (amount*0.20)))
+        } else if (amount >= 2000) {
+            console.log("You got 10% discount");
+        } else if (amount >= 1000) {
+            console.log("You got 5% discount");
+        } else {
+            console.log("Sorry, you are not eligible for discount");
+        }
+
+    </script>
+</body>
+
+</html>

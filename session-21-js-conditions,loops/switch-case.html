@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Switch Case Demo</h3>
+    <script>
+        let num=prompt("Enter any number between 1-7");
+        // by default prompt value stored in string
+        // I used Number to convert string to number
+        switch(Number(num)){
+            case 1: document.write("<h1>today is Monday</h1>"); 
+                    break;
+            case 2: document.write("<h1>today is Tuesday</h1");
+                    break;
+            case 3: document.write("<h1>today is Wednesday</h1");
+                    break;
+            case 4: document.write("<h1>today is Thursday</h1");
+                    break;
+            case 5: document.write("<h1>today is Friday</h1");
+                    break;
+            case 6: document.write("<h1>today is Saturday</h1");
+                    break;
+            case 7: document.write("<h1>today is Sunday</h1");
+                    break;
+            default: document.write("<h1>Enter Correct Number</h1");
+        }
+    </script>
+</body>
+</html>
