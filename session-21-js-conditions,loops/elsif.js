@@ -14,3 +14,4 @@ else if(per<35 && per>=0)
     console.log("Sorry You are Fail")
 else 
     console.log("Please Enter Correct Result")
+
