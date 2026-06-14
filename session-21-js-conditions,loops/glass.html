@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glass Effect Button</title>
+
+  <style>
+    body{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(135deg, #ff04de, #a600ff);
+      font-family: Arial, sans-serif;
+    }
+
+    .glass-btn{
+      padding:15px 35px;
+      font-size:18px;
+      color:white;
+      border:none;
+      border-radius:15px;
+
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+
+      border:1px solid rgba(255,255,255,0.3);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+      cursor:pointer;
+      transition:0.3s ease;
+    }
+
+    .glass-btn:hover{
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="glass-btn">Glass Button</button>
+
+</body>
+</html>
