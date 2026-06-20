@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="red">Button1</button>
+    <button class="red">Button2</button>
+    <button class="red">Button3</button>
+
+    <script>
+        const collections = document.getElementsByClassName("red");
+        console.log(collections); //live
+        const nodelist = document.querySelectorAll('.red')
+        console.log(nodelist); // live or static
+    </script>
+</body>
+</html>

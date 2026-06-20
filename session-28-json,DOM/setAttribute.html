@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Image Demo</h3>
+    <button onclick="show()">Show</button> </br>
+    <img src=""/> 
+    
+    <script>
+        function show(){
+            let element=document.querySelector('img');
+            let btn=document.querySelector('button');
+            if(btn.textContent=='Show'){
+                element.setAttribute('src','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbPsqWjwEnrezAerXg5Okq-dYCtFgvW5K0xA&s');
+                btn.textContent="Hide";
+                btn.style.backgroundColor='yellow'
+            }else{
+                element.setAttribute('src','');
+                btn.textContent="Show";
+                btn.style.backgroundColor='lightgreen'
+            }
+        }
+    </script>
+</body>
+</html>

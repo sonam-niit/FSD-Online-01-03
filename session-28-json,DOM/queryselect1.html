@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Query Selector</title>
+</head>
+
+<body>
+    <h1>Heading 1</h1>
+    <h1 id="myid">Heading 2</h1>
+    <h1 class="myclass">Heading 3</h1>
+
+    <script>
+        const ele1 = document.querySelector("h1"); // ByTag Name
+        ele1.textContent = "Good Morning";
+        const ele2 = document.querySelector("#myid"); // ById
+        ele2.innerHTML = "&#128591; <i>Good Afternoon!</i> &#128591;"
+        const ele3 = document.querySelector(".myclass"); //ByClassName
+        ele3.textContent = "Good Evening!"
+    </script>
+</body>
+
+</html>

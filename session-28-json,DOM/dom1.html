@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Demo</title>
+</head>
+
+<body>
+    <h1 id="title">Welcome to DOM</h1>
+    <p class="red">Test Paragraph</p>
+    <button onclick="changeTitle()">Change Title</button>
+    <script>
+        function changeTitle() {
+            const element = document.getElementById("title");
+            element.textContent = "Hello Sonam Soni";
+
+            const paras= document.getElementsByClassName('red');
+            paras[0].style.color="red"
+            paras[0].style.fontSize="30px"
+        }
+    </script>
+</body>
+
+</html>

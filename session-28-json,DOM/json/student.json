@@ -1,0 +1,18 @@
+{
+    "school": "Physics Wallah",
+    "email": "support@pw.live",
+    "students": [
+        {
+            "name": "Alex",
+            "age": 23
+        },
+        {
+            "name": "Devid",
+            "age": 23
+        },
+        {
+            "name": "John",
+            "age": 25
+        }
+    ]
+}
