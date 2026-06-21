@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark{
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" style="padding: 20px; text-align: center;">
+        Toggle Dark Mode
+    </div>
+    <button onclick="toggleTheme()">Toggle Theme</button>
+    <script>
+        function toggleTheme(){
+            const box=document.getElementById("box");
+            box.classList.toggle("dark");
+        }
+    </script>
+</body>
+</html>

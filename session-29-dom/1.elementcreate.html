@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            color: blue;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div> 
+    <script>
+        //create element
+        const heading = document.createElement("h1");
+        heading.textContent = "Welcome to JS DOM";
+        heading.id= "mainheading";
+        heading.className = "title";
+
+        const container = document.getElementById("container");
+        container.appendChild(heading);
+
+        const btn= document.createElement("button");
+        btn.textContent="Click Me";
+
+        container.appendChild(btn);
+         // inject single element at a time
+        // elements can only  node (tag)
+        // old method
+    </script>
+</body>
+</html>

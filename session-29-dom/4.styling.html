@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="nav navbar">Hello</div>
+    <button onclick="highlight()">Highlight</button>
+    <button onclick="remove()">Remove Highlight</button>
+    <script>
+        const box = document.querySelector("#box");
+        function highlight(){
+            box.classList.add('highlight');
+        }
+        function remove(){
+            box.classList.remove('highlight');
+        }
+    </script>
+</body>
+
+</html>

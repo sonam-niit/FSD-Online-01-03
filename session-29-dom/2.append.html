@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append Demo</title>
+</head>
+<body>
+    <div id="container"></div> 
+    <script>
+        //create element
+        const heading = document.createElement("h1");
+        heading.textContent = "Welcome to JS DOM";
+        heading.id= "mainheading";
+        heading.className = "title";
+
+        const btn= document.createElement("button");
+        btn.textContent="Click Me";
+
+        const container = document.getElementById("container");
+        container.append(heading,"This is my text",btn);
+        // inject multiple elements
+        // elements can be simple string or node (tag)
+        // new method
+    </script>
+</body>
+</html>

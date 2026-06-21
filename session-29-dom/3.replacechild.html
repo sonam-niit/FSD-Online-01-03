@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <p id="old">Old Para</p>
+        <button onclick="swap2()">Click Me to swap</button>
+    </div>
+    <script>
+        //old approach
+        function swap() {
+            const container = document.getElementById('container');
+            const newPara = document.createElement('p');
+            newPara.textContent = "New Paragraph";
+            const oldPara = document.getElementById("old");
+            container.replaceChild(newPara, oldPara);
+        }
+        //new Approach
+        function swap2() {
+            const newPara = document.createElement('p');
+            newPara.textContent = "New Paragraph";
+            const oldPara = document.getElementById("old");
+            oldPara.replaceWith(newPara)
+        }
+
+    </script>
+</body>
+
+</html>
