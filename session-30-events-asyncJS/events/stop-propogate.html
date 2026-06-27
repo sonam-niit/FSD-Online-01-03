@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            width: 300px;
+            height: 200px;
+            background-color: lightblue;
+            padding: 30px;
+        }
+        #span{
+            padding: 30px;
+            background-color: aquamarine;
+        }
+        #child {
+            padding: 15px 25px;
+        }
+    </style>
+</head>
+<body class="container">
+   <div id="parent">
+        Parent Div
+        <br><br>
+        <span id="span">
+            <button id="child">Click Me</button>
+        </span>
+    </div>
+    <script>
+        const container = document.querySelector('.container');
+        const parent = document.getElementById("parent");
+        const span = document.getElementById("span");
+        const child = document.getElementById("child");
+        parent.addEventListener('click', function (event) {
+            event.stopPropagation();
+        document.body.style.backgroundColor = "red";
+            console.log("Parent Div Clicked");
+        })
+          span.addEventListener('click', function (event) {
+            event.stopPropagation();
+            document.body.style.backgroundColor = "blue";
+            console.log("Span Clicked");
+        })
+        child.addEventListener('click', function (event) {
+            event.stopPropagation();
+            document.body.style.backgroundColor = "yellow";
+            console.log("Button Clicked");
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.google.com" id="link">google</a>
+
+    <form id="myform">
+        <input type="text" placeholder="Enter Something"/>
+        <button type="submit">Submit Data</button>
+    </form>
+
+    <input type="checkbox" id="check">Accpt Terms
+    <script>
+        document.getElementById("link").addEventListener('click',function(event){
+            event.preventDefault();
+            console.log("Link Click Prevented");
+        })
+
+        document.getElementById('myform').addEventListener('submit',function(event){
+            event.preventDefault();
+            console.log("Form Submission Prevented");
+        })
+
+        document.getElementById('check').addEventListener('click',function(event){
+            event.preventDefault();
+            console.log("Check Prevented");
+        })
+    </script>
+</body>
+</html>

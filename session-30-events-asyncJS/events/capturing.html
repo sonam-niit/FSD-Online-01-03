@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Capturing</title>
+    <style>
+        #parent {
+            width: 300px;
+            height: 200px;
+            background-color: lightblue;
+            padding: 30px;
+        }
+        #span{
+            padding: 20px;
+            background-color: bisque;
+        }
+        #child {
+            padding: 15px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        Parent Div
+        <br><br>
+        <span id="span">
+            <button id="child">Click Me</button>
+        </span>
+    </div>
+    <script>
+        const parent = document.getElementById("parent");
+        const span = document.getElementById("span");
+        const child = document.getElementById("child");
+        parent.addEventListener('click', function () {
+            console.log("Parent Div Clicked");
+        },
+            true // capturing phase
+        )
+        span.addEventListener('click', function () {
+            console.log("Span Clicked");
+        }, true)
+        child.addEventListener('click', function () {
+            console.log("Button Clicked");
+        }, true)
+    </script>
+</body>
+
+</html>
