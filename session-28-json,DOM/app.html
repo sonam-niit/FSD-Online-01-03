@@ -16,10 +16,25 @@
         <option value="/">/</option>
     </select>
     <br><br>
-    Result: <input type="number" id="result" />
-
+    <button onclick="calculate()">Submit</button> <br><br>
+    Result: <input type="number" id="result" readonly/>
+    
     <script>
         // Task for practice
+        function calculate(){
+            const num1=Number(document.querySelector("#num1").value);
+            const num2=Number(document.querySelector("#num2").value);
+            const op = document.querySelector("#op").value;
+            let result;
+            switch(op){
+                case "+": result = num1+num2; break;
+                case "-": result = num1-num2; break;
+                case "*": result = num1*num2; break;
+                case "/": result = num1/num2; break;
+            }
+            const show=document.querySelector("#result");
+            show.value = result
+        }
     </script>
 </body>
 </html>
