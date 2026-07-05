@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Name" id="name">
+    <button id="save">Save My Name</button>
+    <button id="reset">Delete Data</button>
+
+    <script>
+        const btn=document.getElementById("save");
+        btn.addEventListener("click",()=>{
+            const input= document.getElementById("name");
+            localStorage.setItem("name",input.value);
+            input.value="";
+            alert("Value Saved")
+        })
+
+        document.getElementById("reset").addEventListener('click',()=>{
+            localStorage.removeItem('name');
+            alert("Item Remove")
+        })
+    </script>
+</body>
+</html>

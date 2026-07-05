@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter Name" id="name"> <br><br>
+    <input type="email" placeholder="Enter Email" id="email"> <br><br>
+    <input type="date" placeholder="Enter Date of Birth" id="dob"> <br><br>
+    <button id="save">Save My Name</button>
+
+    <script>
+        const btn=document.getElementById("save");
+        btn.addEventListener("click",()=>{
+            const input1= document.getElementById("name");
+            const input2= document.getElementById("email");
+            const input3= document.getElementById("dob");
+            localStorage.setItem("user1",JSON.stringify({name:input1.value,email:input2.value,dob:input3.value}));
+            alert("Value Saved")
+        })
+
+
+    </script>
+</body>
+</html>
