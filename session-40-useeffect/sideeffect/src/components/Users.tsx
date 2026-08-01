@@ -30,6 +30,9 @@ function Users() {
             }
             finally{
                 setLoading(false)
+                // setTimeout(()=>{
+                //     setLoading(false)
+                // },2000)
             }
         }
         fetchData();
