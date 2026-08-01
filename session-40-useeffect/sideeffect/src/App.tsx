@@ -1,3 +1,4 @@
+import Counter from "./components/Counter";
 import NavBar from "./components/NavBar";
 import Users from "./components/Users"
 import { useTheme } from "./context/ThemeContext"
@@ -15,7 +16,8 @@ function App() {
     }}>
       <NavBar />
       <h2>Component Rendered</h2>
-      <Users />
+      <Counter />
+      {/* <Users /> */}
     </div>
   )
 }

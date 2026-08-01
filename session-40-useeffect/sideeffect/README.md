@@ -1,32 +1,12 @@
-# React + TypeScript + Vite
+# use Context
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+- create context under context folder.
+- ThemeContext
+- here we implemented ThemeContext using useContext
+- then created provider which is just function which taking all props childern compnent and will provide the data that you want.
+- also create useTheme() function which is using context and returnig theme ( if we will not do this in every component where you wnat use these data you have to write this code.)
+- just to avoid rewriting we created this.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+*add provider in main.tsx*
+*used it in app.tsx to apply css*
+*used it in NavBar.tsx to create button by clicking on this button theme will be changed*
