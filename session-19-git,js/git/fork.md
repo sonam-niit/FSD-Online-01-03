@@ -2,7 +2,7 @@
 
 - when you want to make a copy of someone's project to experiment we can fork repo.
 - of if you want to contribute your idea to community you can fork.
-- whatever repository you want to fork just go to that repo and click on form button.
+- whatever repository you want to fork just go to that repo and click on fork button.
 
 [Sample Repo Link](https://github.com/sonam-niit/my-sample-portfolio)
 
