@@ -38,10 +38,14 @@
 - Now Let's create Database
 
 ```sh
+
+show dbs; # to see available databases
+
 use pwskills; # for creating Database
 
 db.createCollection("students"); # create Collection
 
+show collections; # to see available connections
 # Insertion
 db.students.insertOne(
     { 
@@ -78,3 +82,17 @@ db.students.insertMany([
 
 db.students.find();
 ```
+
+## Task to complete
+
+- [Create MongoDB Atlas Account](https://www.mongodb.com/products/platform/atlas-database)
+
+- once its cretaed leave it black, configuration we will do later.
+
+
+## Query Task
+
+- create database of your name
+- cretae collection named employees
+- insert some records of employees.
+- retrive all records from employee collection
