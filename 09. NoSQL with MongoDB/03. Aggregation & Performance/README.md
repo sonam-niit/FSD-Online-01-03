@@ -201,3 +201,83 @@ db.orders.aggregate([
   }
 ])
 ```
+
+**$count**
+
+```js
+db.orders.aggregate([
+  { $match: { status: "Completed" } },
+  { $count: "totalCompletedOrders" }
+]);
+```
+
+**concat**
+
+```js
+db.orders.aggregate([
+  {
+    $project:{
+      _id:0,
+      customerDetails:{$concat:["$customer"," - ","$city"]},
+       greeting: {
+        $concat: ["Hello, ", "$customer", "! Your order for ", "$product", " is ", "$status", "."]
+      }
+    }
+  }
+]);
+```
+
+## $sort and $limit
+
+```js
+use('schoolDB');
+
+db.students.insertMany([
+  {name:"Alice",marks:91,age:20},
+  {name:"Bob",marks:78,age:21},
+  {name:"Charlie",marks:95,age:19},
+  {name:"David",marks:85,age:20},
+  {name:"Emma",marks:88,age:22},
+  {name:"Frank",marks:72,age:21}
+]);
+
+db.students.aggregate([
+  {$sort:{marks:-1}},
+  {$limit:3}
+]);
+
+db.students.aggregate([
+  {$project: {_id:0}},
+  {$sort:{marks:-1}},
+  {$limit:3}
+]);
+```
+
+## MongoDB Compass Aggregation Builder
+
+- In MongoDB Compass
+
+![step 1](concepts/step1.png)
+
+![step 2](concepts/step2.png)
+
+![step 3](concepts/step3.png)
+
+- again click on Add Stage
+
+![step 4](concepts/step4.png)
+
+![step 5](concepts/step5.png)
+
+![step 6](concepts/step6.png)
+
+![step 7](concepts/step7.png)
+
+- Run query see the output, save the pipeline
+- also you can see the query code.
+
+
+## Practice Task for Indexing
+
+![Practice Task](concepts/practiceTask.png)
+
