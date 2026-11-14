@@ -1,0 +1,21 @@
+{
+  "name": "express-pug-demo",
+  "version": "1.0.0",
+  "description": "- create folder express-pug-demo\r - move to the folder -> cd express-pug-demo\r - package.json -> npm init -y\r - edit package.json: \"type\": \"module\",\r - install : npm i express pug\r - npm install --save-dev nodemon\r - create views folder - create file index.pug under that\r - add code in index.pug\r - create app.js, add code\r - run using node app.js\r - check output localhost:3000 in browser",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.3.0",
+    "pug": "^3.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

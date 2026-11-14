@@ -1,0 +1,14 @@
+doctype html 
+html 
+    head 
+        title= title 
+    body 
+        h1 User Profile 
+        h2 Name: #{user.name}
+        p Age: #{user.age}
+        p Profession: #{user.profession}
+
+        h3 Technical Skills 
+        ul 
+            each skill in user.skills 
+                li= skill

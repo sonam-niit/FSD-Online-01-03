@@ -1,0 +1,21 @@
+
+extends layout
+
+block content
+    h2= title
+
+    if blogs.length > 0
+        each blog in blogs
+            .blog-card
+                h3
+                    a(href=`/blog/${blog.id}`)= blog.title
+
+                p Author: #{blog.author}
+
+                p Category: #{blog.category}
+
+                p Content: #{blog.content}
+
+                a(href=`/blog/${blog.id}`) Read More
+    else
+        h3 No blogs found!

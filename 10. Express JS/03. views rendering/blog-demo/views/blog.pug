@@ -1,0 +1,21 @@
+extends layout 
+
+block content 
+
+    .blog-detail 
+
+        h2= blog.title 
+
+        p 
+            strong Author: 
+            | #{blog.author}
+
+        p 
+            strong Category: 
+            | #{blog.category}
+
+        hr 
+
+        p= blog.content 
+
+        a(href="/") Back to Home
